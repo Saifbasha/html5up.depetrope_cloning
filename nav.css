@@ -1,0 +1,129 @@
+@import url(./main.css);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro';
+}
+nav{
+    width: 100%;
+    height: 60px;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color:rgba(55, 61, 73, 0.975);
+    position: sticky;
+    top: 0%;
+    z-index: 20;
+}
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+nav div+div{
+    /* border: 2px solid red; */
+    margin-right: 10px;
+    width: 35%;
+    cursor: pointer;
+}
+nav div ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border: 1px solid rgba(150,150,150,0.7);
+    margin-left: 15px;
+    border-radius: 5px;
+    /* border: 2px solid; */
+}
+nav div ul li{
+    padding: 10px 8px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+nav div ul li+li:hover{
+    background-color: rgba(150,150,150,0.2);
+}
+nav div+div div div+div img{
+    height: 20px;
+    width: 20px;
+    color: #000;
+}
+nav div ul li{
+    background-color:rgba(150,150,150,0.7);
+    border-radius: 5px;
+}
+nav div ul li+li{
+    background-color: inherit;
+}
+nav>div+div>div{
+    border: 1px solid rgba(150,150,150,0.7) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+nav>div+div>div>div{
+    border: 1px solid;
+    padding: 0px 10px;
+    background-color: blue;
+    border: none;
+}
+nav>div+div>div>div+div{
+    background-color: #000;
+    border-radius: 15px;
+}
+nav>div+div>div+button{
+    padding: 10px 18px;
+    background-color: transparent;
+    border: 1px solid rgba(150,150,150,0.7);
+    color: #fff;
+}
+nav>div+div>div+button+button{
+    padding: 10px 20px;
+    color: #fff;
+    background-color:#e7746f;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+header{
+    width: 100%;
+    height: 35vh;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size: 40px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    list-style: none;
+    /* border: 2px solid green; */
+}
+header ul li{
+    padding:10px 20px;
+    font-size:20px;
+    font-style: italic;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+header ul li{
+    background-color:#f00;
+}
+header ul li+li{
+    background-color: #fff;
+}
+header ul li+li:hover{
+    background-color: rgba(150,150,150,0.3);
+}

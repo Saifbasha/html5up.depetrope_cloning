@@ -1,0 +1,202 @@
+@import url(./footer.css);
+main{
+    position: relative;
+}
+main figure img{
+    width: 100%;
+    height: 60vh;
+}
+main figure+div{
+    width: 50%;
+    height: 150px;
+    border: 2px solid;
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 50px;
+}
+main figure+div h1{
+    color: white;
+    font-size: 40px;
+}
+main figure+div p{
+    color: #f00;
+    font-size: 20px;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    /* border: 2px solid; */
+}
+#banner>div{
+    height: 400px;
+    width: 400px;
+    /* border: 2px solid red; */
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#banner>div>div{
+    height: 125px;
+    width: 125px;
+    background-color: #d52349;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+#banner>div>div::after{
+    content: "";
+    position: absolute;
+    top: 535px;
+    left: 210px;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right: 64px solid transparent;
+    border-top: 28.8675px solid #d52349;
+}
+#banner>div+div>div{
+    background-color: #000;
+}
+#banner>div+div>div::after{
+    content: "";
+    position: absolute;
+    top: 535px;
+    left: 610px;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right:64px solid transparent;
+    border-top: 28.8675px solid #000;
+}
+#banner>div+div+div>div{
+    background-color: #827a7c;
+}
+#banner>div+div+div>div::after{
+    content: "";
+    position: absolute;
+    top: 535px;
+    left: 1010px;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right:64px solid transparent;
+    border-top: 28.8675px solid #827a7c;
+}
+#banner>div>h2{
+    font-size: 30px;
+    margin-top: 30px;
+}
+#banner>div>p{
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.ban{
+    /* border: 1px solid #000; */
+    box-shadow: 1px 1px 5px #000;
+}
+main button{
+    position: absolute;
+    top:770px;
+    left: 30%;
+    padding: 10px 70px;
+    color: #fff;
+    background-color: #d52349;
+    border: none;
+    font-size: 25px;
+}
+main button+button{
+    position: absolute;
+    top: 770px;
+    left: 52%;
+    background-color: #000;
+}
+hr{
+    margin-top: 100px;
+}
+section{
+    width: 100%;
+    background-color:rgb(200, 200, 200,0.3);
+    /* border:2px solid yellow; */
+}
+
+section h1{
+    text-align: center;
+    margin: 50px 0px;
+}
+#portfolio{
+    width: 90%;
+    height: 220vh;
+    margin: auto;
+    /* border: 2px solid; */
+}
+#portfolio div{
+    height: 100vh;
+    width: 30%;
+    float: left;
+    /* border: 2px solid red; */
+    margin: 20px 20px;
+    background-color: #fff;
+}
+#portfolio div img{
+    width: 100%;
+}
+#portfolio div h2{
+    font-size: 30px;
+    text-align: center;
+}
+#portfolio div p{
+    font-size: 17px;
+   padding: 0px 15px;
+}
+#portfolio div button{
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+#blog{
+    width: 90%;
+    height: 110vh;
+    margin: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+#blog>div{
+    width: 48%;
+    height: 90%;
+    /* border: 2px solid ; */
+    background-color: #fff;
+    
+}
+#blog>div h2,#blog>div p{
+    padding: 10px 50px;
+}
+#blog>div img{
+    width: 100%;
+}
+#blog>div button{
+    padding: 10px 25px;
+    color: #fff;
+    background-color: #d52349;
+    border: none;
+    margin-left: 35px;
+}
+#blog>div button+button{
+    background-color: #000;
+}
